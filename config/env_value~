@@ -1,0 +1,21 @@
+#define value of makefile environment
+
+#kernel
+KERNEL_CONFIG = $(BASE_HOME)/config/linux/linux-$(KERNEL_VERSION)/$(ARCH).config
+KERNEL_DIR = $(BASE_HOME)/src/kernel/linux-$(KERNEL_VERSION)
+
+
+#boot
+MKIMAGE_BIN = $(BASE_HOME)/src/uboot/tool #todo
+UBOOT_DIR  = $(BASE_HOME)/src/uboot
+
+#busybox 
+BUSYBOX_CONFIG =  $(BASE_HOME)/config/busybox-$(BUSYBOX_VERSION)/$(ARCH).config
+BUSYBOX_DIR = $(BASE_HOME)/src/busybox-$(BUSYBOX_VERSION)
+
+#target 
+IMAGE_DIR = $(BASE_HOME)/target/$(ARCH)/linux-$(KERNEL_VERSION)/$(ARCH)
+BOOT_DIR  = $(BASE_HOME)/target/$(ARCH)/boot
+ROOT_DIR = $(BASE_HOME)/target/$(ARCH)/root
+
+
