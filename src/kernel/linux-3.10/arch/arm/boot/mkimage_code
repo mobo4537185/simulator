@@ -1,0 +1,5 @@
+#!/bin/sh 
+mkimage -n 'linux-3.10' -A arm -O linux -T kernel -C none -a 0x30007fc0 -e 0x30008000 -d zImage uImage
+
+echo uImage to /tftpboot
+ cp -rf  uImage /tftpboot/uImage_s5pv210

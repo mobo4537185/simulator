@@ -1,0 +1,12 @@
+menuconfig MOBO
+	bool "Driver By MoBo"
+	help
+	  Driver By MoBo
+if MOBO
+
+config S5PV210_TS
+	tristate "TouchScreen of S5PV210"
+	help
+	  TouchScreen of S5PV210
+
+endif

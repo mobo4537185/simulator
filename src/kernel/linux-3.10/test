@@ -1,0 +1,3 @@
+#!/bin/sh
+make zImage
+./arch/arm/boot/mkimage_code 
